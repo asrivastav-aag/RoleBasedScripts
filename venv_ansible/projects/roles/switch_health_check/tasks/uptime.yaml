@@ -1,0 +1,10 @@
+---
+- name: Collect Uptime Details
+  cisco.ios.ios_command:
+    commands:
+      - sho version
+  register: uptime
+
+- name: Display 'uptime' data
+  debug:
+    msg: "{{ uptime.stdout[0] }}"

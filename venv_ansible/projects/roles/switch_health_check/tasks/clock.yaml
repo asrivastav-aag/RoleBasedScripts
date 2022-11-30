@@ -1,0 +1,9 @@
+- name: Collect Last Config Changed and Saved
+  cisco.ios.ios_command:
+    commands:
+      - sho clock
+  register: clock
+
+- name: Display 'clock' data
+  debug:
+    msg: "Current Time of the Device: {{ clock.stdout_lines[0] }}"

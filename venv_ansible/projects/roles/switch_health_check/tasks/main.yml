@@ -1,2 +1,7 @@
 ---
 - import_tasks: config_change.yaml
+  tags: config_change
+- import_tasks: uptime.yaml
+  tags: uptime
+- import_tasks: clock.yaml
+  tags: clock
