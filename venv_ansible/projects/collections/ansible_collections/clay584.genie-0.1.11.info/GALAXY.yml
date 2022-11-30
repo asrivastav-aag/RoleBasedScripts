@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/download/clay584-genie-0.1.11.tar.gz
+format_version: 1.0.0
+name: genie
+namespace: clay584
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 0.1.11
+version_url: https://galaxy.ansible.com/api/v2/collections/clay584/genie/versions/0.1.11/
