@@ -1,2 +1,2 @@
 ---
-# tasks file for roles/switch_health_check
+- import_tasks: config_change.yaml

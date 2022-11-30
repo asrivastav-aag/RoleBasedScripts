@@ -1,4 +1,4 @@
 ---
-- hosts: all
+- hosts: seaxn-lab-cs-1
   roles:
     - switch_health_check

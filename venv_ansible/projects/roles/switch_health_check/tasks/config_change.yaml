@@ -1,0 +1,11 @@
+---
+
+- name: Collect Last Config Changed and Saved
+  cisco.ios.ios_command:
+    commands:
+      - sho run | sec Last|NVRAM
+  register: run_config
+
+- name: Display 'run_config' data
+  debug:
+    msg: "{{ run_config.stdout_lines[0] }}"
