@@ -1,0 +1,11 @@
+---
+# tasks file for roles/test_role
+- name: Task 1 - Get NTP Config
+  cisco.ios.ios_command:
+    commands:
+      - show run | in ntp
+  register: ntp_var
+
+- name: Display NTP config
+  debug:
+    var: ntp_var.stdout_lines[0]
