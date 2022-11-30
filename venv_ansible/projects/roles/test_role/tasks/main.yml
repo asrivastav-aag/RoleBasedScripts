@@ -9,3 +9,7 @@
 - name: Display NTP config
   debug:
     var: ntp_var.stdout_lines[0]
+
+- name: Validate that the DNS Works
+  cisco.ios.ios_ping:
+    dest: google.com

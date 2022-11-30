@@ -1,0 +1,4 @@
+---
+ntp: 
+  - "time.alaskaair.com"
+  - "devicehelper.cisco.com"
