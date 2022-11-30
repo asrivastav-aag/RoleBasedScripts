@@ -1,15 +1,19 @@
 ---
-# tasks file for roles/test_role
-- name: Task 1 - Get NTP Config
-  cisco.ios.ios_command:
-    commands:
-      - show run | in ntp
-  register: ntp_var
+- import_tasks: validate_ntp.yaml
+- import_tasks: validate_dns.yaml
 
-- name: Display NTP config
-  debug:
-    var: ntp_var.stdout_lines[0]
 
-- name: Validate that the DNS Works
-  cisco.ios.ios_ping:
-    dest: google.com
+# REFACTORED BELOW TASKS INTO ABOVE YAML FILE
+# - name: Task 1 - Get NTP Config
+#   cisco.ios.ios_command:
+#     commands:
+#       - show run | in ntp
+#   register: ntp_var
+
+# - name: Display NTP config
+#   debug:
+#     var: ntp_var.stdout_lines[0]
+
+# - name: Validate that the DNS Works
+#   cisco.ios.ios_ping:
+#     dest: google.com
