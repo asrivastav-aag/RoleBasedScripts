@@ -1,0 +1,7 @@
+ansible==6.6.0
+paramiko
+ncclient
+pyATS
+genie
+pycparser
+colorama
