@@ -7,6 +7,8 @@
   tags: uptime
 - import_tasks: cpu_history.yaml
   tags: cpu
+- import_tasks: cpu_sorted.yaml
+  tags: cpu_sorted
 - import_tasks: display_messages.yaml
   tags:
     - config_change
