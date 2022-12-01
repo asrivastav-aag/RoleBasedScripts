@@ -13,4 +13,7 @@
 
 - name: Display 'cpu_data' data
   debug:
-    msg: "{{ cpu_sorted }}"
+    msg: 
+      - "Average CPU Load in 60sec: {{ cpu_sorted | cpu60sec }}%"
+      - "Average CPU Load in 60min: {{ cpu_sorted | cpu60min }}%"
+      - "Average CPU Load in 72hrs: {{ cpu_sorted | cpu72hrs }}%"

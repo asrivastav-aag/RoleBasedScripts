@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 class FilterModule:
 
-    def filters():
+    def filters(cpu60min):
         return {'cpu60min' : FilterModule.cpu60min, 'cpu72hrs': FilterModule.cpu72hrs, 'cpu60sec': FilterModule.cpu60sec}
     
     def cpu60min (cpu_data):
@@ -11,7 +11,7 @@ class FilterModule:
                 cpu60min_max_values.append(cpu_data['60m'][data]['maximum'])
         cpu60min_avg = sum(cpu60min_max_values) / len(cpu60min_max_values)
 
-        return cpu60min_avg
+        return int(cpu60min_avg)
 
     def cpu72hrs (cpu_data):
         cpu72hrs_max_values = []
@@ -20,7 +20,7 @@ class FilterModule:
                 cpu72hrs_max_values.append(cpu_data['72h'][data]['maximum'])
         cpu72hrs_avg = sum(cpu72hrs_max_values) / len(cpu72hrs_max_values)
 
-        return cpu72hrs_avg
+        return int(cpu72hrs_avg)
 
     def cpu60sec (cpu_data):
         cpu60sec_max_values = []
@@ -29,4 +29,4 @@ class FilterModule:
                 cpu60sec_max_values.append(cpu_data['60s'][data]['maximum'])
         cpu60sec_avg = sum(cpu60sec_max_values) / len(cpu60sec_max_values)
 
-        return cpu60sec_avg
+        return int(cpu60sec_avg)
