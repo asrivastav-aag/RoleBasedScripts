@@ -1,7 +1,7 @@
 ansible
 paramiko
 ncclient
-pyATS
+pyats[full]
 genie
 pycparser
 colorama
