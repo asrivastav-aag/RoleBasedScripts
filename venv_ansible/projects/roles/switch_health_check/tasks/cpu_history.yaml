@@ -2,18 +2,17 @@
 - name: Collect CPU Load Details
   cisco.ios.ios_command:
     commands:
-      # - show processes cpu sorted
       - show processes cpu history
   register: cpu
 
 - name: Task 2 - Parse CPU Data from 'cpu'
   set_fact:
-    cpu_sorted: "{{ cpu.stdout[0] | clay584.genie.parse_genie(command='show processes cpu history', os='ios') }}"
-#     # cpu_history: "{{ cpu.stdout[0] | clay584.genie.parse_genie(command='show processes cpu sorted', os='ios') }}"
+    cpu_history: "{{ cpu.stdout[0] | clay584.genie.parse_genie(command='show processes cpu history', os='ios') }}"
 
-- name: Display 'cpu_data' data
-  debug:
-    msg: 
-      - "Average CPU Load in 60sec: {{ cpu_sorted | cpu60sec }}%"
-      - "Average CPU Load in 60min: {{ cpu_sorted | cpu60min }}%"
-      - "Average CPU Load in 72hrs: {{ cpu_sorted | cpu72hrs }}%"
+
+# - name: Display 'cpu_data' data
+#   debug:
+#     msg: 
+#       - "Average CPU Load in 60sec: {{ cpu_history | cpu60sec }}%"
+#       - "Average CPU Load in 60min: {{ cpu_history | cpu60min }}%"
+#       - "Average CPU Load in 72hrs: {{ cpu_history | cpu72hrs }}%"

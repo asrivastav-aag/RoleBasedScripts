@@ -9,9 +9,9 @@
   set_fact:
     uptime_data: "{{ uptime.stdout[0] | clay584.genie.parse_genie(command='show version', os='ios') }}"
 
-- name: Display 'uptime_data' data
-  debug:
-    msg: 
-      - "Device Uptime: {{ uptime_data['version']['uptime'] }}"
-      - "Last Rebooted: {{ uptime_data['version']['system_restarted_at'] }}"
-      - "Reboot Reason: {{ uptime_data['version']['last_reload_reason'] }}"
+# - name: Display 'uptime_data' data
+#   debug:
+#     msg: 
+#       - "Device Uptime: {{ uptime_data['version']['uptime'] }}"
+#       - "Last Rebooted: {{ uptime_data['version']['system_restarted_at'] }}"
+#       - "Reboot Reason: {{ uptime_data['version']['last_reload_reason'] }}"

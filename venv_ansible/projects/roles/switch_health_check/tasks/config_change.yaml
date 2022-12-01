@@ -6,6 +6,6 @@
       - sho run | sec Last|NVRAM
   register: run_config
 
-- name: Display 'run_config' data
-  debug:
-    msg: "{{ run_config.stdout_lines[0] }}"
+# - name: Display 'run_config' data
+#   debug:
+#     msg: "{{ run_config.stdout_lines[0] }}"

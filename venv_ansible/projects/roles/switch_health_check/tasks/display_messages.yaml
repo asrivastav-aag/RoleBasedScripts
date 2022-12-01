@@ -1,0 +1,12 @@
+---
+- name: Display 'run_config' data
+  debug:
+    msg: 
+      - "Device Time: {{ clock.stdout_lines[0] }}"
+      - "{{ run_config.stdout_lines[0] }}"
+      - "Device Uptime: {{ uptime_data['version']['uptime'] }}"
+      - "Last Rebooted: {{ uptime_data['version']['system_restarted_at'] }}"
+      - "Reboot Reason: {{ uptime_data['version']['last_reload_reason'] }}"
+      - "Average CPU Load in 60sec: {{ cpu_history | cpu60sec }}%"
+      - "Average CPU Load in 60min: {{ cpu_history | cpu60min }}%"
+      - "Average CPU Load in 72hrs: {{ cpu_history | cpu72hrs }}%"

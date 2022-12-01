@@ -1,9 +1,15 @@
 ---
+- import_tasks: clock.yaml
+  tags: clock
 - import_tasks: config_change.yaml
   tags: config_change
 - import_tasks: uptime.yaml
   tags: uptime
-- import_tasks: clock.yaml
-  tags: clock
 - import_tasks: cpu_history.yaml
   tags: cpu
+- import_tasks: display_messages.yaml
+  tags:
+    - config_change
+    - uptime
+    - clock
+    - cpu

@@ -4,6 +4,6 @@
       - sho clock
   register: clock
 
-- name: Display 'clock' data
-  debug:
-    msg: "Current Time of the Device: {{ clock.stdout_lines[0] }}"
+# - name: Display 'clock' data
+#   debug:
+#     msg: "Current Time of the Device: {{ clock.stdout_lines[0] }}"
