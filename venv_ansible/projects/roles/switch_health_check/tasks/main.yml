@@ -5,5 +5,5 @@
   tags: uptime
 - import_tasks: clock.yaml
   tags: clock
-- import_tasks: cpu.yaml
+- import_tasks: cpu_history.yaml
   tags: cpu
