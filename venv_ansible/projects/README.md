@@ -11,7 +11,7 @@ As I believe...
 
 > CHANGE IS THE PERMANENT CONSTANT
 
-... so, please ping me or add comments if a script can be betterly modified; Or something new can be included.
+please ping me or add comments on scripts if a script can be betterly modified/written; Or something new can be included.
 
 ## Tech
 
