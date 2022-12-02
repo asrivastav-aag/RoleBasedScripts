@@ -9,15 +9,10 @@
   set_fact:
     cpu_sorted: "{{ cpu_sorted.stdout[0] | clay584.genie.parse_genie(command='show processes cpu sorted', os='ios') }}"
 
-- name: Save 'cpu_sorted' to a file
-  copy:
-    content: "{{ cpu_sorted | to_nice_json }}"
-    dest: cpu_sorted.json
-
-
-# - name: Display 'cpu_data' data
+# - name: Display 'cpu_sorted' data
 #   debug:
 #     msg: 
-#       - "Average CPU Load in 60sec: {{ cpu_history | cpu60sec }}%"
-#       - "Average CPU Load in 60min: {{ cpu_history | cpu60min }}%"
-#       - "Average CPU Load in 72hrs: {{ cpu_history | cpu72hrs }}%"
+#       - "Average CPU Load in 5sec: {{ cpu_sorted | cpu5secload }}%"
+#       - "Average CPU Load in 1min: {{ cpu_sorted | cpu1minload }}%"
+#       - "Average CPU Load in 5min: {{ cpu_sorted | cpu5minload }}%"
+#       - "Apps Utilizing 40% or above CPU: {{ cpu_sorted | LoadConsumingProcess }}"
