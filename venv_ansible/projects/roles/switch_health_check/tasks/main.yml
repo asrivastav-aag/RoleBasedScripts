@@ -17,4 +17,15 @@
 - import_tasks: 006MemoryUtilization.yaml
   tags: mem_stat
 
+- import_tasks: 007HardwareAndSoftwareDetails.yaml
+  tags: version
+
+
+
+
+
+
+
+
+
 - import_tasks: displayMessages.yaml

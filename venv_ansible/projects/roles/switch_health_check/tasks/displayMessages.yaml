@@ -13,4 +13,7 @@
       - "Average CPU Load in 60min: {{ cpu_history | cpu60min }}%"
       - "Average CPU Load in 72hrs: {{ cpu_history | cpu72hrs }}%"
       - "Apps Utilizing 40% or above CPU: {{ cpu_sorted | LoadConsumingProcess }}"
-      - "Current Memory Utilization is {{ 100 - (free_mem | int *100) // total_mem | int }} %" 
+      - "Current Memory Utilization is {{ 100 - (free_mem | int *100) // total_mem | int }}%"
+      - "Total Stack Members in the Switch Cluster: {{ version | TotalStackMembers }}"
+      - "The Network OS Stack Members are running with: {{ version['version']['os'] }}"
+      - "Hardware & Software Details of the Stack Members: {{ version | HardwareDetails }}"

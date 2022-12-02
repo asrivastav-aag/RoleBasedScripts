@@ -1,0 +1,16 @@
+---
+- name: Collect 'show version' Details
+  cisco.ios.ios_command:
+    commands:
+      - show version
+  register: version
+
+- name: Task 2 - Parse 'version'
+  set_fact:
+    version: "{{ version.stdout[0] | clay584.genie.parse_genie(command='show version', os='ios') }}"
+
+# - debug:
+#     msg: 
+#       - "Total Stack Members in the Switch Cluster: {{ version | TotalStackMembers }}"
+#       - "The Network OS Stack Members are running with: {{ version['version']['os'] }}"
+#       - "Hardware & Software Details of the Stack Members: {{ version | HardwareDetails }}"
