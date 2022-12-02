@@ -1,14 +1,20 @@
 ---
-- import_tasks: clock.yaml
+- import_tasks: 001Clock.yaml
   tags: clock
-- import_tasks: config_change.yaml
+
+- import_tasks: 002ConfChange.yaml
   tags: config_change
-- import_tasks: uptime.yaml
+
+- import_tasks: 003Uptime.yaml
   tags: uptime
-- import_tasks: cpu_history.yaml
+
+- import_tasks: 004CPU_History.yaml
   tags: cpu
-- import_tasks: cpu_sorted.yaml
+
+- import_tasks: 005CPU_Sorted.yaml
   tags: cpu_sorted
-- import_tasks: memory_utilization.yaml
+
+- import_tasks: 006MemoryUtilization.yaml
   tags: mem_stat
-- import_tasks: display_messages.yaml
+
+- import_tasks: displayMessages.yaml
