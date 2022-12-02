@@ -7,7 +7,7 @@
 - Uses default & custom Python based filters to display required messages
 
 
-As I [Avinash Srivastava] believe...
+As I believe...
 
 > CHANGE IS THE PERMANENT CONSTANT
 
