@@ -51,5 +51,5 @@ Instructions on how to use them in your own application are linked below.
 | 004CPU_History.yaml | show processes cpu history | Processor Load History | cpu & cpu_history | filters/cpu_load.py Cpu60sec, Cpu60min, cpu72hrs|
 | 005CPU_Sorted.yaml | show processes cpu sorted | Processor Load Sorted | cpu_sorted | filters/cpu_sorted.py Cpu5secload,cpu5minload, cpu1minload, LoadConsumingProcess|
 | 006MemoryUtilization.yaml | show memory statistics | Memory Load | mem_stats, mem_data, free_mem, total_mem | ansible defaults|
-| 007HardwareAndSoftwareDetails.yaml | show version | | Hardware Make, Model and Software Version | version | filters/version_filter.py TotalStackMembers, HardwareDetails|
+| 007HardwareAndSoftwareDetails.yaml | show version | Hardware Make, Model and Software Version | version | filters/version_filter.py TotalStackMembers, HardwareDetails|
 | DisplayMessages.yaml | NA | Display All messages in one debug | NA | NA|
