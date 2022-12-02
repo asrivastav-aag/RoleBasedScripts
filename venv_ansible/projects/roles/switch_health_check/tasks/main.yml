@@ -9,9 +9,6 @@
   tags: cpu
 - import_tasks: cpu_sorted.yaml
   tags: cpu_sorted
+- import_tasks: memory_utilization.yaml
+  tags: mem_stat
 - import_tasks: display_messages.yaml
-  tags:
-    - config_change
-    - uptime
-    - clock
-    - cpu

@@ -1,0 +1,25 @@
+---
+- name: Collect 'show memory statistics' from the switch
+  cisco.ios.ios_command:
+    commands:
+      - show memory statistics
+  register: mem_stats
+
+- name: Parse 'mem_stats' output
+  set_fact:
+    mem_data: "{{mem_stats.stdout[0] | clay584.genie.parse_genie(command='show memory statistics', os='ios')}}"
+
+- name: Set Facts for Computation
+  set_fact:
+    free_mem: "{{mem_data['name']['i/o']['free'] | int }}"
+    total_mem: "{{mem_data['name']['i/o']['total'] | int }}"
+
+# - name: Task 7 - Display Current utilization of Memory
+#   debug:
+#     msg: "Current Memory Utilization is {{ 100 - (free_mem | int *100) // total_mem | int }} %" 
+    #  - "{{ mem_data['name']['i/o']['free'] - 100 }}"
+    #  - "{{ mem_data['name']['i/o']['free'] * 100 }}"
+    #  - "{{ mem_data['name']['i/o']['free'] }}"
+    #  - "{{mem_data['name']['i/o']['total']}}"
+    #  - (100 - {{ free_mem *100 }}) // {{ total_mem }}%
+    #  - {{ 100 - (free_mem | int *100) // total_mem | int }}
