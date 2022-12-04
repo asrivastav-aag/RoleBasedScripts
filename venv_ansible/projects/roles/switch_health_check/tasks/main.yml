@@ -20,6 +20,9 @@
 - import_tasks: 007HardwareAndSoftwareDetails.yaml
   tags: version
 
+- import_tasks: 008StackStatus.yaml
+  tags: stack
+
 
 
 

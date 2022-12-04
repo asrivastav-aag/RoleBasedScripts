@@ -1,0 +1,16 @@
+---
+- name: Collect Stack Details
+  cisco.ios.ios_command:
+    commands:
+      - show switch detail
+  register: stack
+
+- name: Task 2 - Parse Stack Data from 'stack'
+  set_fact:
+    stack_data: "{{ stack.stdout[0] | clay584.genie.parse_genie(command='show switch detail', os='ios') }}"
+
+# - name: Display 'stack_data' data
+#   debug:
+#     msg: 
+#       - "Total Number of Stack Members in the Cluster: {{ stack_data | TotalStackMembers }}"
+#       - "Stack Members Details: {{ stack_data | DisplayStackState }}"

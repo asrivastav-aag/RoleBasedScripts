@@ -17,3 +17,5 @@
       - "Total Stack Members in the Switch Cluster: {{ version | TotalStackMembers }}"
       - "The Network OS Stack Members are running with: {{ version['version']['os'] }}"
       - "Hardware & Software Details of the Stack Members: {{ version | HardwareDetails }}"
+      - "Total Number of Stack Members in the Cluster: {{ stack_data | TotalStackMembers }}"
+      # - "Stack Members Details: {{ stack_data | DisplayStackState }}"
