@@ -4,7 +4,7 @@ class FilterModule:
     def filters(BasicInfo):
         return {
             'BasicInfo' : FilterModule.BasicInfo, 
-            'TotalStackMembers': FilterModule.TotalStackMembers, 
+            'TotalChassis': FilterModule.TotalChassis, 
             'HardwareDetails': FilterModule.HardwareDetails,
             }
     
@@ -22,7 +22,7 @@ class FilterModule:
         
         return final_data
 
-    def TotalStackMembers (version_data):
+    def TotalChassis (version_data):
         version = version_data['version']['switch_num']
         stack_members = len(version)
 
