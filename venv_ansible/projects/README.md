@@ -52,3 +52,4 @@ All Script uses:
 | 008StackStatus.yaml | show stack detail | Stack Switch Status, Stack Port Status, Member Roles | stack, stack_data | filters/version_filter.py TotalStackMembers, DisplayStackState |
 | DisplayMessages.yaml | NA | Display All messages in one debug | NA | NA|
 
+![Final Messages after Completion of the Script](https://github.com/asrivastav-aag/RoleBasedScripts/blob/b4cf54891157738e911f43203beb63722b054c95/venv_ansible/projects/glimpse.png)
