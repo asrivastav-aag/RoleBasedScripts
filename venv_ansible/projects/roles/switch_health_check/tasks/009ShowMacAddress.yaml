@@ -1,0 +1,16 @@
+---
+- name: Collect MAC Address Table Details
+  cisco.ios.ios_command:
+    commands:
+      - show mac address-table
+  register: mac
+
+- name: Task 2 - Parse MAC Address Data from 'mac'
+  set_fact:
+    mac_table: "{{ mac.stdout[0] | clay584.genie.parse_genie(command='show mac address-table', os='ios') }}"
+
+- name: Display 'mac_table' data
+  debug:
+    msg: 
+      - "Total Number of MAC Addresses on the Switch: {{ mac_table | TotalMACaddr }}"
+

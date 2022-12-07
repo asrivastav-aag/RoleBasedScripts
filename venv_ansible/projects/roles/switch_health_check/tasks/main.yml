@@ -23,7 +23,8 @@
 - import_tasks: 008StackStatus.yaml
   tags: stack
 
-
+- import_tasks: 009ShowMacAddress.yaml
+  tags: mac
 
 
 

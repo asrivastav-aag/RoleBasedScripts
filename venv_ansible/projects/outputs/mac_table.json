@@ -1,0 +1,601 @@
+{
+    "mac_table": {
+        "vlans": {
+            "all": {
+                "vlan": "all",
+                "mac_addresses": {
+                    "0100.0ccc.cccc": {
+                        "mac_address": "0100.0ccc.cccc",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0100.0ccc.cccd": {
+                        "mac_address": "0100.0ccc.cccd",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0100.0ccd.cddc": {
+                        "mac_address": "0100.0ccd.cddc",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0000": {
+                        "mac_address": "0180.c200.0000",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0001": {
+                        "mac_address": "0180.c200.0001",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0002": {
+                        "mac_address": "0180.c200.0002",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0003": {
+                        "mac_address": "0180.c200.0003",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0004": {
+                        "mac_address": "0180.c200.0004",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0005": {
+                        "mac_address": "0180.c200.0005",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0006": {
+                        "mac_address": "0180.c200.0006",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0007": {
+                        "mac_address": "0180.c200.0007",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0008": {
+                        "mac_address": "0180.c200.0008",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0009": {
+                        "mac_address": "0180.c200.0009",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000a": {
+                        "mac_address": "0180.c200.000a",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000b": {
+                        "mac_address": "0180.c200.000b",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000c": {
+                        "mac_address": "0180.c200.000c",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000d": {
+                        "mac_address": "0180.c200.000d",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000e": {
+                        "mac_address": "0180.c200.000e",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.000f": {
+                        "mac_address": "0180.c200.000f",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "0180.c200.0010": {
+                        "mac_address": "0180.c200.0010",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "ffff.ffff.ffff": {
+                        "mac_address": "ffff.ffff.ffff",
+                        "interfaces": {
+                            "CPU": {
+                                "interface": "CPU",
+                                "entry_type": "static"
+                            }
+                        }
+                    }
+                }
+            },
+            "1": {
+                "vlan": 1,
+                "mac_addresses": {
+                    "cc46.d6e1.ac30": {
+                        "mac_address": "cc46.d6e1.ac30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/46": {
+                                "interface": "GigabitEthernet1/0/46",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "d867.d9c5.78b0": {
+                        "mac_address": "d867.d9c5.78b0",
+                        "interfaces": {
+                            "GigabitEthernet1/0/39": {
+                                "interface": "GigabitEthernet1/0/39",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "fc99.4706.5d30": {
+                        "mac_address": "fc99.4706.5d30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/43": {
+                                "interface": "GigabitEthernet1/0/43",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "10": {
+                "vlan": 10,
+                "mac_addresses": {
+                    "0009.0f09.0006": {
+                        "mac_address": "0009.0f09.0006",
+                        "interfaces": {
+                            "Port-channel1": {
+                                "interface": "Port-channel1",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "1866.da85.eb87": {
+                        "mac_address": "1866.da85.eb87",
+                        "interfaces": {
+                            "GigabitEthernet2/0/13": {
+                                "interface": "GigabitEthernet2/0/13",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "1866.da85.eb8d": {
+                        "mac_address": "1866.da85.eb8d",
+                        "interfaces": {
+                            "GigabitEthernet1/0/13": {
+                                "interface": "GigabitEthernet1/0/13",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "704c.a510.fa15": {
+                        "mac_address": "704c.a510.fa15",
+                        "interfaces": {
+                            "GigabitEthernet1/0/30": {
+                                "interface": "GigabitEthernet1/0/30",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "704c.a510.fa18": {
+                        "mac_address": "704c.a510.fa18",
+                        "interfaces": {
+                            "GigabitEthernet1/0/31": {
+                                "interface": "GigabitEthernet1/0/31",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "7486.e232.7893": {
+                        "mac_address": "7486.e232.7893",
+                        "interfaces": {
+                            "GigabitEthernet1/0/35": {
+                                "interface": "GigabitEthernet1/0/35",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "c464.1312.a488": {
+                        "mac_address": "c464.1312.a488",
+                        "interfaces": {
+                            "GigabitEthernet1/0/47": {
+                                "interface": "GigabitEthernet1/0/47",
+                                "entry_type": "static"
+                            }
+                        }
+                    },
+                    "cc46.d6e1.ac30": {
+                        "mac_address": "cc46.d6e1.ac30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/46": {
+                                "interface": "GigabitEthernet1/0/46",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "fc99.4706.5d41": {
+                        "mac_address": "fc99.4706.5d41",
+                        "interfaces": {
+                            "GigabitEthernet1/0/43": {
+                                "interface": "GigabitEthernet1/0/43",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "891": {
+                "vlan": 891,
+                "mac_addresses": {
+                    "0009.0f09.0006": {
+                        "mac_address": "0009.0f09.0006",
+                        "interfaces": {
+                            "Port-channel1": {
+                                "interface": "Port-channel1",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "00c1.b16f.80c1": {
+                        "mac_address": "00c1.b16f.80c1",
+                        "interfaces": {
+                            "GigabitEthernet1/0/2": {
+                                "interface": "GigabitEthernet1/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "990": {
+                "vlan": 990,
+                "mac_addresses": {
+                    "0009.0f09.0003": {
+                        "mac_address": "0009.0f09.0003",
+                        "interfaces": {
+                            "GigabitEthernet1/0/8": {
+                                "interface": "GigabitEthernet1/0/8",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "0009.0f09.0006": {
+                        "mac_address": "0009.0f09.0006",
+                        "interfaces": {
+                            "Port-channel1": {
+                                "interface": "Port-channel1",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "0010.f39a.f75d": {
+                        "mac_address": "0010.f39a.f75d",
+                        "interfaces": {
+                            "GigabitEthernet2/0/3": {
+                                "interface": "GigabitEthernet2/0/3",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "0013.c601.7f1f": {
+                        "mac_address": "0013.c601.7f1f",
+                        "interfaces": {
+                            "GigabitEthernet2/0/4": {
+                                "interface": "GigabitEthernet2/0/4",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "00c0.b7f0.b792": {
+                        "mac_address": "00c0.b7f0.b792",
+                        "interfaces": {
+                            "GigabitEthernet2/0/1": {
+                                "interface": "GigabitEthernet2/0/1",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "00c0.b7f1.00bf": {
+                        "mac_address": "00c0.b7f1.00bf",
+                        "interfaces": {
+                            "GigabitEthernet1/0/1": {
+                                "interface": "GigabitEthernet1/0/1",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "0cc4.7ab1.af6a": {
+                        "mac_address": "0cc4.7ab1.af6a",
+                        "interfaces": {
+                            "GigabitEthernet1/0/15": {
+                                "interface": "GigabitEthernet1/0/15",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "1833.9d24.09c4": {
+                        "mac_address": "1833.9d24.09c4",
+                        "interfaces": {
+                            "GigabitEthernet1/0/44": {
+                                "interface": "GigabitEthernet1/0/44",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "906c.ac4b.b027": {
+                        "mac_address": "906c.ac4b.b027",
+                        "interfaces": {
+                            "GigabitEthernet2/0/6": {
+                                "interface": "GigabitEthernet2/0/6",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "906c.ac4b.c535": {
+                        "mac_address": "906c.ac4b.c535",
+                        "interfaces": {
+                            "GigabitEthernet1/0/6": {
+                                "interface": "GigabitEthernet1/0/6",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc46.d6e1.ac30": {
+                        "mac_address": "cc46.d6e1.ac30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/46": {
+                                "interface": "GigabitEthernet1/0/46",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc46.d6e1.ac73": {
+                        "mac_address": "cc46.d6e1.ac73",
+                        "interfaces": {
+                            "GigabitEthernet1/0/46": {
+                                "interface": "GigabitEthernet1/0/46",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "d867.d9c5.78c1": {
+                        "mac_address": "d867.d9c5.78c1",
+                        "interfaces": {
+                            "GigabitEthernet1/0/39": {
+                                "interface": "GigabitEthernet1/0/39",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "fc99.4706.5d45": {
+                        "mac_address": "fc99.4706.5d45",
+                        "interfaces": {
+                            "GigabitEthernet1/0/43": {
+                                "interface": "GigabitEthernet1/0/43",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "991": {
+                "vlan": 991,
+                "mac_addresses": {
+                    "0000.0c07.ac5b": {
+                        "mac_address": "0000.0c07.ac5b",
+                        "interfaces": {
+                            "GigabitEthernet1/0/2": {
+                                "interface": "GigabitEthernet1/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "00c1.b16f.80c1": {
+                        "mac_address": "00c1.b16f.80c1",
+                        "interfaces": {
+                            "GigabitEthernet1/0/2": {
+                                "interface": "GigabitEthernet1/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc16.7e23.7071": {
+                        "mac_address": "cc16.7e23.7071",
+                        "interfaces": {
+                            "GigabitEthernet2/0/2": {
+                                "interface": "GigabitEthernet2/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "993": {
+                "vlan": 993,
+                "mac_addresses": {
+                    "0025.830b.9305": {
+                        "mac_address": "0025.830b.9305",
+                        "interfaces": {
+                            "GigabitEthernet1/0/3": {
+                                "interface": "GigabitEthernet1/0/3",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "0c02.27f9.0ca9": {
+                        "mac_address": "0c02.27f9.0ca9",
+                        "interfaces": {
+                            "GigabitEthernet1/0/3": {
+                                "interface": "GigabitEthernet1/0/3",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc16.7e23.7071": {
+                        "mac_address": "cc16.7e23.7071",
+                        "interfaces": {
+                            "GigabitEthernet2/0/2": {
+                                "interface": "GigabitEthernet2/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "995": {
+                "vlan": 995,
+                "mac_addresses": {
+                    "0000.0c07.ac5f": {
+                        "mac_address": "0000.0c07.ac5f",
+                        "interfaces": {
+                            "GigabitEthernet1/0/2": {
+                                "interface": "GigabitEthernet1/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc16.7e23.7071": {
+                        "mac_address": "cc16.7e23.7071",
+                        "interfaces": {
+                            "GigabitEthernet2/0/2": {
+                                "interface": "GigabitEthernet2/0/2",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            },
+            "999": {
+                "vlan": 999,
+                "mac_addresses": {
+                    "1833.9d24.09b4": {
+                        "mac_address": "1833.9d24.09b4",
+                        "interfaces": {
+                            "GigabitEthernet1/0/44": {
+                                "interface": "GigabitEthernet1/0/44",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "cc46.d6e1.ac30": {
+                        "mac_address": "cc46.d6e1.ac30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/46": {
+                                "interface": "GigabitEthernet1/0/46",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "d867.d9c5.78b0": {
+                        "mac_address": "d867.d9c5.78b0",
+                        "interfaces": {
+                            "GigabitEthernet1/0/39": {
+                                "interface": "GigabitEthernet1/0/39",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    },
+                    "fc99.4706.5d30": {
+                        "mac_address": "fc99.4706.5d30",
+                        "interfaces": {
+                            "GigabitEthernet1/0/43": {
+                                "interface": "GigabitEthernet1/0/43",
+                                "entry_type": "dynamic"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "total_mac_addresses": 61
+}
