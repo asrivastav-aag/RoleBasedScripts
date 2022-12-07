@@ -9,9 +9,9 @@
   set_fact:
     mac_table: "{{ mac.stdout[0] | clay584.genie.parse_genie(command='show mac address-table', os='ios') }}"
 
-- name: Display 'mac_table' data
-  debug:
-    msg: 
-      - "Following MACs are learnt on the Switch: {{ mac_table | DisplayMACaddr }}"
-      - "Total Number of MAC Addresses on the Switch: {{ mac_table | TotalMACaddr }}"
+# - name: Display 'mac_table' data
+#   debug:
+#     msg: 
+#       - "Following MACs are learnt on the Switch: {{ mac_table | DisplayMACaddr }}"
+#       - "Total Number of MAC Addresses on the Switch: {{ mac_table | TotalMACaddr }}"
 

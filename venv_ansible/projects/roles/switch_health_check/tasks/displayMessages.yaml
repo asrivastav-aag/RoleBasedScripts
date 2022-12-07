@@ -19,4 +19,6 @@
       - "Hardware & Software Details of the Stack Members: {{ version | HardwareDetails }}"
       - "Total Number of Stack Members in the Cluster: {{ stack_data | TotalStackMembers }}"
       - "Stack Members Details: {{ stack_data | DisplayStackState }}"
+      - "Following MACs are learnt on the Switch: {{ mac_table | DisplayMACaddr }}"
+      - "Total Number of MAC Addresses on the Switch: {{ mac_table | TotalMACaddr }}"
   # ignore_errors: yes
