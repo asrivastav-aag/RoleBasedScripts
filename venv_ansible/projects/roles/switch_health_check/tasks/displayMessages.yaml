@@ -28,4 +28,6 @@
       - "Following MACs are learnt on the Switch: {{ mac_table | DisplayMACaddr }}"
       - "Total Number of MAC Addresses on the Switch: {{ mac_table | TotalMACaddr }}"
       - "=============================================================================================================================================="
+      - "Directly Connected MAC Addresses on {{ inventory_hostname }}: {{ mac_table | DisplayConnectedMAC }}"
+      - "=============================================================================================================================================="
   # ignore_errors: yes
