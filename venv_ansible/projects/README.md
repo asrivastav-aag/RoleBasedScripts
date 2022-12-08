@@ -50,6 +50,7 @@ All Script uses:
 | 006MemoryUtilization.yaml | show memory statistics | Memory Load | mem_stats, mem_data, free_mem, total_mem | ansible defaults|
 | 007HardwareAndSoftwareDetails.yaml | show version | Hardware Make, Model and Software Version | version | filters/version_filter.py TotalChassis, HardwareDetails|
 | 008StackStatus.yaml | show stack detail | Stack Switch Status, Stack Port Status, Member Roles | stack, stack_data | filters/version_filter.py TotalStackMembers, DisplayStackState |
+| 009ShowMacAddress.yaml | show mac address-table | Total MAC Addresses, All MACs per VLAN, Directly Connected MAC Addresses | mac, mac_table | filters/mac_filter.py DisplayMACaddr, TotalMACaddr, DisplayConnectedMAC |
 | DisplayMessages.yaml | NA | Display All messages in one debug | NA | NA|
 
 ![Final Messages after Completion of the Script](https://github.com/asrivastav-aag/RoleBasedScripts/blob/b4cf54891157738e911f43203beb63722b054c95/venv_ansible/projects/glimpse.png)
