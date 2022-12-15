@@ -46,7 +46,7 @@ All Script uses:
 | 002ConfChange.yaml |show run ! sec Last!NVRAM | Last Configuration Change - Date, time, and who | run_config | None|
 | 003Uptime.yaml | show version | Uptime, Last reboot reason, and when was the reboot occurred | Uptime & uptime_data | None|
 | 004CPU_History.yaml | show processes cpu history | Processor Load History | cpu & cpu_history | filters/cpu_load.py Cpu60sec, Cpu60min, cpu72hrs|
-| 005CPU_Sorted.yaml | show processes cpu sorted | Processor Load Sorted | cpu_sorted | filters/cpu_sorted.py Cpu5secload,cpu5minload, cpu1minload, LoadConsumingProcess|
+| 005CPU_Sorted.yaml | show processes cpu sorted | Processor Load Sorted and high utilizing modules| cpu_sorted | filters/cpu_sorted.py Cpu5secload,cpu5minload, cpu1minload, LoadConsumingProcess|
 | 006MemoryUtilization.yaml | show memory statistics | Memory Load | mem_stats, mem_data, free_mem, total_mem | ansible defaults|
 | 007HardwareAndSoftwareDetails.yaml | show version | Hardware Make, Model and Software Version | version | filters/version_filter.py TotalChassis, HardwareDetails|
 | 008StackStatus.yaml | show stack detail | Stack Switch Status, Stack Port Status, Member Roles | stack, stack_data | filters/version_filter.py TotalStackMembers, DisplayStackState |
