@@ -1,5 +1,5 @@
 # Role Based Scripts | Perform Complete Health Check for Cisco Switches
-## Features
+## What the script does?
 
 - Logins to Cisco Switches via Paramiko & Local Creds
 - Gathers certain Commands output (mentioned in below table) and import them into Variable
@@ -24,7 +24,7 @@ All Script uses:
 - ansible
 - paramiko
 - ncclient
-- 'pyats[full]'
+- pyats[full]
 - genie
 - pycparser
 - colorama
