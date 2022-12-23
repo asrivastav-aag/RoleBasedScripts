@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/download/networktocode-nautobot-4.2.0.tar.gz
+format_version: 1.0.0
+name: nautobot
+namespace: networktocode
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 4.2.0
+version_url: https://galaxy.ansible.com/api/v2/collections/networktocode/nautobot/versions/4.2.0/

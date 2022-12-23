@@ -2,3 +2,4 @@
 collections:
   - "cisco.ios"
   - "clay584.genie"
+  - "networktocode.nautobot"
