@@ -1,2 +1,7 @@
 ---
 - import_playbook: 001SwithHealthCheckRoleBasedPlaybook.yaml
+
+
+# If running the playbook from MAC, use this command.
+# env no_proxy='*' ansible-playbook 001MainScript_SwitchHealthCheck.yaml --ask-vault-pass -i nauto_dynainv.yaml
+# This will remove the "ERROR! A worker was found in a dead state"
