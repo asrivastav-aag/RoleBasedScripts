@@ -1,4 +1,4 @@
 ---
-- hosts: device_roles_lab-switch
+- hosts: sea2n-tb1-cs-1
   roles:
     - switch_health_check
