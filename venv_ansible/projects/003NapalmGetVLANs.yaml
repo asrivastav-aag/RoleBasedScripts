@@ -1,0 +1,11 @@
+---
+- name: NAPALM Get facts and Get Interfaces
+  hosts: sea2n-tb1-cs-1,seaxn-lab-as-2,seajn-lab-cs-1
+  gather_facts: false
+  tasks:
+    - name: napalm get_facts
+      napalm_get_facts:
+        filter: [mac_address_table,lldp_neighbors]
+      register: facts
+    - debug:
+        msg: "{{ facts }}"
