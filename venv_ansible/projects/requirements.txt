@@ -6,3 +6,5 @@ genie
 pycparser
 colorama
 jmespath
+napalm-ansible
+napalm
