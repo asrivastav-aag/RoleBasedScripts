@@ -14,5 +14,6 @@ config_context: false
 group_by:
   - device_roles
   - manufacturers
+  - platforms
 persistent_connection:
   - command_timeout: 60

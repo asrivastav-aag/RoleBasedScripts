@@ -1,6 +1,6 @@
 ---
 - name: NAPALM Get facts and Get Interfaces
-  hosts: sea2n-tb1-cs-1,seaxn-lab-as-2,seajn-lab-cs-1
+  hosts: sea2n-tb1-cs-1,seajn-lab-cs-1  # from device_roles_lab-switch (ios) AND from device_roles_switch (junos)
   gather_facts: false
   tasks:
     - name: napalm get_facts
