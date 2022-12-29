@@ -1,4 +1,5 @@
 ---
-- hosts: device_roles
+- hosts: seaxn-lab-as-3
   roles:
     - switch_health_check
+  ignore_errors: yes

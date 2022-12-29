@@ -3,16 +3,17 @@
   cisco.ios.ios_command:
     commands:
       - show processes cpu sorted
-  register: cpu_sorted
+  register: cpu_sort
 
 - name: Task 2 - Parse CPU Data from 'cpu'
   set_fact:
-    cpu_sorted: "{{ cpu_sorted.stdout[0] | clay584.genie.parse_genie(command='show processes cpu sorted', os='ios') }}"
+    cpu_sorted: "{{ cpu_sort.stdout[0] | clay584.genie.parse_genie(command='show processes cpu sorted', os='iosxe') }}"
 
-# - name: Display 'cpu_sorted' data
-#   debug:
-#     msg: 
-#       - "Average CPU Load in 5sec: {{ cpu_sorted | cpu5secload }}%"
-#       - "Average CPU Load in 1min: {{ cpu_sorted | cpu1minload }}%"
-#       - "Average CPU Load in 5min: {{ cpu_sorted | cpu5minload }}%"
-#       - "Apps Utilizing 40% or above CPU: {{ cpu_sorted | LoadConsumingProcess }}"
+- name: Display 'cpu_sorted' data
+  debug:
+    msg: 
+      - "{{ cpu_sorted }}"
+      # - "Average CPU Load in 5sec: {{ cpu_sorted | cpu5secload }}%"
+      # - "Average CPU Load in 1min: {{ cpu_sorted | cpu1minload }}%"
+      # - "Average CPU Load in 5min: {{ cpu_sorted | cpu5minload }}%"
+      # - "Apps Utilizing 40% or above CPU: {{ cpu_sorted | LoadConsumingProcess }}"
