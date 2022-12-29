@@ -1,4 +1,4 @@
 ---
-- hosts: sea2n-tb1-cs-1
+- hosts: device_roles
   roles:
     - switch_health_check
